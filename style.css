@@ -116,6 +116,70 @@ footer a{
 }
 
 
+.blog-container{
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.2) 0 4px 2px -2px ;
+    font-weight: 100;
+    margin: 40px auto;
+    width: 50rem;
+}
+.blog-container a:hover{
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+}
+.blog-cover{
+  background-image: url(images/natures.jpg);  
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  height: 15rem;
+  box-shadow: inset rgba(0,0,0,0.2) 0 64px 16px;
+}
+.blog-body{
+    margin: 0 auto;
+    width: 80%;
+}
+.blog-title h1 a{
+    color: #333;
+    font-weight: 100;
+}
+.blog-text p{
+    color: #4d4d4d;
+}
+
+.blog-tags ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+.blog-tags a{
+    border :  1px solid #999999;
+    border-radius: 3px;
+    font-size: .75rem;
+    color: #999999;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    padding: 0 .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 5rem;
+}
+.blog-footer{
+    border-top: 1px solid #c8c6c6;
+    margin: 0 auto;
+    padding-bottom: 0.125rem;
+    width: 80%;
+}
+.blog-footer ul{
+    list-style: none;
+    display: flex;
+    flex: row;
+    justify-content: flex-end;
+    padding-left: 0;
+}
 
 @media screen and (max-width: 768px){
     .topnav a:not(:first-child){
@@ -150,6 +214,9 @@ footer a{
         width: 45%;
         margin-left: 10px;
     }
+    .blog-container{
+        width: 28rem;
+    }
 }
 @media screen and (max-width: 520px){
     .advantages{
@@ -170,6 +237,9 @@ footer a{
     .gallery-item{
         width: 70%;
         margin: 0 auto;
+    }
+    .blog-container{
+        width: 20rem;
     }
 
 }
