@@ -94,7 +94,26 @@ footer a{
     background-color: #494949;
     border-radius: 50%;
 }
-
+.gallery{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.gallery-item img{
+    width: 271px;
+    height: 167px;
+    box-sizing: border-box;
+    max-width: 99%;
+    opacity: 0.8;
+}
+.gallery-item img:hover{
+    opacity: 1;
+}
+.gallery-item{
+    width: 25%;
+}
 
 
 
@@ -127,6 +146,10 @@ footer a{
     .advantages__item{
         width: 45%;
     }
+    .gallery-item{
+        width: 45%;
+        margin-left: 10px;
+    }
 }
 @media screen and (max-width: 520px){
     .advantages{
@@ -134,6 +157,19 @@ footer a{
     }
     .advantages__item{
         width: 100%;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery{
+        width: auto;
+        margin: auto;
+    }
+    .gallery-item{
+        width: 70%;
+        margin: 0 auto;
     }
 
 }
